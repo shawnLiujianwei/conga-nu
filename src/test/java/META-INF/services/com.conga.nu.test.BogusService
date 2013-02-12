@@ -1,0 +1,2 @@
+# This class should NOT implement com.conga.nu.test.BogusService
+com.conga.nu.test.BogusServiceImpl

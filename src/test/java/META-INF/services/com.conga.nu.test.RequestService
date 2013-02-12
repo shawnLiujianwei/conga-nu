@@ -1,0 +1,20 @@
+# The following are bogus class names; they should be ignored by Services.$()
+com/fail
+/com/fail
+com fail
+long	fail
+
+# The following implements the appropriate interface but should not be found
+# because it is not annotated with @ServiceProvider
+com.conga.nu.test.FakeRequestServiceImpl
+
+# The following is a class with the lowest priority; it shouldn't be found
+# unless the others are blacklisted
+com.conga.nu.test.TestBlacklistRequestServiceImpl
+
+# The following is a class with a priority lower than RequestServiceImpl; it
+# should not be found
+com.conga.nu.test.RequestServiceImpl2
+
+# The following is the proper class name
+com.conga.nu.test.RequestServiceImpl
