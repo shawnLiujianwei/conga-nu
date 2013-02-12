@@ -1,5 +1,5 @@
-Nu - A fast, featherweight service locator framework for Java
-==============================================================
+Nu - A fast, featherweight service locator for Java
+===================================================
 
 Nu makes your code modular by separating interface from implementation, allowing clean separation of API/SPI and pluggable implementation using the Service Locator pattern. Wiring between interface and implementation is nominally declarative via Java's ServiceLoader mechanism plus supporting annotations, but can also be controlled manually.
 
